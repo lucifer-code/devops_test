@@ -11,7 +11,7 @@ install:
 script:
   - npm run test  # Replace with your test script if applicable
   - npm run build  # Replace with your build script if applicable
-  - npm install -g serve
-  - serve -s build
+  # - npm install -g serve
+  # - serve -s build
 
 # Additional configuration options go here
