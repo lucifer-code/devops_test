@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "16"  # Use the Node.js version you need
+
+cache:
+  npm: true
+
+install:
+  - npm ci
+
+script:
+  - npm run test  # Replace with your test script if applicable
+  - npm run build  # Replace with your build script if applicable
+
+# Additional configuration options go here
