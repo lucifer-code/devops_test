@@ -10,3 +10,11 @@ services:
     volumes:
       - .:/app  # Mount the current directory to /app in the container
 #      - /app/node_modules  # Mount the node_modules directory as a volume to avoid overwriting it with the host's node_modules
+  tests:  # This is the name of your service
+    build:
+      context: .
+      dockerfile: Dockerfile  # Corrected the Dockerfile name
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+#      - /app/node_modules  # Mount the node_modules directory as a volume to avoid overwriting it with the host's node_modules
+    command: ["npm","run","test"]
